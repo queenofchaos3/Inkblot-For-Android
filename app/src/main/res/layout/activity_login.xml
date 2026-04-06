@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- Inkblot Logo Image -->
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:src="@drawable/inkblot_logo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your writer's sanctuary"
+        android:textColor="@color/text_muted"
+        android:textSize="14sp"
+        android:layout_marginBottom="56dp"/>
+
+    <!-- Google Sign In Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_google_signin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Continue with Google"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/accent_blue"
+        app:cornerRadius="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing in you agree to our terms of service"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

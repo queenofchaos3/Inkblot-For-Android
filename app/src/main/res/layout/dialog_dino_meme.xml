@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_dino"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_dino_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E8F5F3"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base backgrounds — each page gets its own dark tone -->
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="bg_home">#0A0F0F</color>
+    <color name="bg_write">#080D0A</color>
+    <color name="bg_mywork">#0A0A0F</color>
+    <color name="bg_compete">#0F0D08</color>
+    <color name="bg_community">#0D0A0F</color>
+    <color name="bg_panel">#111418</color>
+    <color name="bg_card">#141A1A</color>
+    <color name="bg_sidebar">#111111</color>
+    <color name="bg_active">#1A2A2A</color>
+
+    <!-- Neon accents -->
+    <color name="neon_cyan">#00FFE5</color>
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_cyan_dim">#00BFA5</color>
+    <color name="neon_green_dim">#28CC0F</color>
+
+    <!-- Keep accent_blue mapped to cyan for existing references -->
+    <color name="accent_blue">#00BFA5</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E8F5F3</color>
+    <color name="text_muted">#4A6060</color>
+    <color name="text_hint">#2A4040</color>
+
+    <!-- Utility -->
+    <color name="error_red">#FF4444</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Glow card border -->
+    <color name="glow_cyan">#1A00FFE5</color>
+    <color name="glow_green">#1A39FF14</color>
+</resources>

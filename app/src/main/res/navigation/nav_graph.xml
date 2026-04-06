@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.inkblot.app.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/writeFragment"
+        android:name="com.inkblot.app.WriteFragment"
+        android:label="Write"/>
+
+    <fragment
+        android:id="@+id/myWorkFragment"
+        android:name="com.inkblot.app.MyWorkFragment"
+        android:label="My Work"/>
+
+    <fragment
+        android:id="@+id/competeFragment"
+        android:name="com.inkblot.app.CompeteFragment"
+        android:label="Compete"/>
+
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.inkblot.app.CommunityFragment"
+        android:label="Community"/>
+
+    <fragment
+        android:id="@+id/entryDetailFragment"
+        android:name="com.inkblot.app.EntryDetailFragment"
+        android:label="Entry">
+        <argument
+            android:name="docId"
+            app:argType="string"/>
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <argument
+            android:name="content"
+            app:argType="string"/>
+        <argument
+            android:name="wordCount"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.inkblot.app.SettingsFragment"
+        android:label="Settings"/>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.inkblot.app.UserProfileFragment"
+        android:label="Profile">
+        <argument
+            android:name="targetUserId"
+            app:argType="string"/>
+        <argument
+            android:name="targetUsername"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

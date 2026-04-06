@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/writeFragment"
+        android:title="Write"
+        android:icon="@drawable/ic_write"/>
+    <item
+        android:id="@+id/myWorkFragment"
+        android:title="My Work"
+        android:icon="@drawable/ic_work"/>
+    <item
+        android:id="@+id/competeFragment"
+        android:title="Compete"
+        android:icon="@drawable/ic_compete"/>
+    <item
+        android:id="@+id/communityFragment"
+        android:title="Community"
+        android:icon="@drawable/ic_community"/>
+</menu>

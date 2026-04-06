@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Competition"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/et_comp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Competition name"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:background="@color/bg_dark"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/et_comp_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:background="@color/bg_dark"
+            android:padding="12dp"
+            android:minLines="2"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Status toggle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/chip_ongoing"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Ongoing"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/chip_upcoming"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Upcoming"
+                android:gravity="center"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <!-- Mode toggle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MODE"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/chip_online"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Online"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/chip_offline"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Offline"
+                android:gravity="center"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <!-- Location (shown only when Offline) -->
+        <EditText
+            android:id="@+id/et_comp_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:background="@color/bg_dark"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Deadline date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEADLINE DATE"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_comp_pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick date"
+            android:textColor="@color/neon_cyan"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:background="@color/bg_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_comp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/neon_cyan"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Competition date + time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPETITION DATE &amp; TIME"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_comp_pick_event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick date"
+            android:textColor="@color/neon_green"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:background="@color/bg_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_comp_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/neon_green"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/btn_comp_pick_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick time"
+            android:textColor="@color/neon_green"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:background="@color/bg_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_comp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/neon_green"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
